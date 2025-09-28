@@ -1,0 +1,138 @@
+{
+  "description": "Datos de referencia para el cálculo de consumo de agua (Evapotranspiración) en plantas de Huertón.",
+  "parameters": {
+    "units": "Tmax (°C), Vw (km/h), HR (%)",
+    "levels": {
+      "A": "Alto",
+      "M": "Medio",
+      "B": "Bajo"
+    },
+    "levelRanges": {
+      "Tmax": {
+        "B": "< 20",
+        "M": "20 - 28",
+        "A": "> 28"
+      },
+      "Vw": {
+        "B": "< 10",
+        "M": "10 - 25",
+        "A": "> 25"
+      },
+      "HR": {
+        "B": "< 55",
+        "M": "55 - 75",
+        "A": "> 75"
+      }
+    },
+    "defaultWaterVolume_mL": 500,
+    "conversionFactor_mL_per_mm": 10
+  },
+  "plantCoefficients": {
+    "PM1": {
+      "name": "Cactus/Suculenta",
+      "kc": 0.3
+    },
+    "PM2": {
+      "name": "Planta de Interior (Hojas Duras)",
+      "kc": 0.65
+    },
+    "PM3": {
+      "name": "Ornamental de Maceta",
+      "kc": 0.9
+    },
+    "PM4": {
+      "name": "Hortaliza de Hoja/Fruto (Activa)",
+      "kc": 1.15
+    },
+    "PM5": {
+      "name": "Césped/Pasto",
+      "kc": 1.0
+    }
+  },
+  "evapotranspirationMap_ET0_mm_day": {
+    "key_format": "RS_L,Tmax_L,Vw_L,HR_L",
+    "data": {
+      "A,A,A,B": 8.5,
+      "A,A,A,M": 8.0,
+      "A,A,A,A": 7.5,
+      "A,A,M,B": 8.0,
+      "A,A,M,M": 7.5,
+      "A,A,M,A": 7.0,
+      "A,A,B,B": 7.5,
+      "A,A,B,M": 7.0,
+      "A,A,B,A": 6.5,
+      "A,M,A,B": 7.5,
+      "A,M,A,M": 7.0,
+      "A,M,A,A": 6.5,
+      "A,M,M,B": 7.0,
+      "A,M,M,M": 6.5,
+      "A,M,M,A": 6.0,
+      "A,M,B,B": 6.5,
+      "A,M,B,M": 6.0,
+      "A,M,B,A": 5.5,
+      "A,B,A,B": 6.5,
+      "A,B,A,M": 6.0,
+      "A,B,A,A": 5.5,
+      "A,B,M,B": 6.0,
+      "A,B,M,M": 5.5,
+      "A,B,M,A": 5.0,
+      "A,B,B,B": 5.5,
+      "A,B,B,M": 5.0,
+      "A,B,B,A": 4.5,
+      "M,A,A,B": 7.0,
+      "M,A,A,M": 6.5,
+      "M,A,A,A": 6.0,
+      "M,A,M,B": 6.5,
+      "M,A,M,M": 6.0,
+      "M,A,M,A": 5.5,
+      "M,A,B,B": 6.0,
+      "M,A,B,M": 5.5,
+      "M,A,B,A": 5.0,
+      "M,M,A,B": 5.5,
+      "M,M,A,M": 5.0,
+      "M,M,A,A": 4.5,
+      "M,M,M,B": 5.0,
+      "M,M,M,M": 4.5,
+      "M,M,M,A": 4.0,
+      "M,M,B,B": 4.5,
+      "M,M,B,M": 4.0,
+      "M,M,B,A": 3.5,
+      "M,B,A,B": 4.0,
+      "M,B,A,M": 3.0,
+      "M,B,A,A": 2.5,
+      "M,B,M,B": 3.5,
+      "M,B,M,M": 3.0,
+      "M,B,M,A": 2.5,
+      "M,B,B,B": 3.0,
+      "M,B,B,M": 2.5,
+      "M,B,B,A": 2.0,
+      "B,A,A,B": 6.0,
+      "B,A,A,M": 5.5,
+      "B,A,A,A": 5.0,
+      "B,A,M,B": 5.5,
+      "B,A,M,M": 5.0,
+      "B,A,M,A": 4.5,
+      "B,A,B,B": 5.0,
+      "B,A,B,M": 4.5,
+      "B,A,B,A": 4.0,
+      "B,M,A,B": 3.5,
+      "B,M,A,M": 3.0,
+      "B,M,A,A": 2.5,
+      "B,M,M,B": 3.0,
+      "B,M,M,M": 2.5,
+      "B,M,M,A": 2.0,
+      "B,M,B,B": 2.5,
+      "B,M,B,M": 2.0,
+      "B,M,B,A": 1.5,
+      "B,B,A,B": 2.0,
+      "B,B,A,M": 1.5,
+      "B,B,A,A": 1.0,
+      "B,B,M,B": 1.5,
+      "B,B,M,M": 1.0,
+      "B,B,M,A": 1.0,
+      "B,B,B,B": 1.5,
+      "B,B,B,M": 1.0,
+      "B,B,B,A": 1.0
+    }
+  }
+}
